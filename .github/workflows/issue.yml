@@ -1,0 +1,13 @@
+name: create issue
+
+on:
+  issues:
+    type: create
+
+jobs:
+  find_issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a one-line script
+        run: printenv3
